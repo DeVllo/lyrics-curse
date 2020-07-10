@@ -28,6 +28,7 @@ const Formulario = ({guardarBusquedaLetra}) => {
         }
         guardarError(false);
         guardarBusquedaLetra(busqueda);
+        document.querySelector('#search').disabled = true;
         //Todo está bien, pasar al componente principal
     }
 
@@ -71,6 +72,7 @@ const Formulario = ({guardarBusquedaLetra}) => {
                                 </div>
                             </div>
                             <button
+                                id='search'
                                 type='submit'
                                 className='btn btn-primary float-right'
                             >Buscar</button>
